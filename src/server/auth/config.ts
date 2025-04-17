@@ -6,7 +6,6 @@ import {
   accounts,
   sessions,
   users,
-  verificationTokens,
 } from "@/server/db/schema";
 
 /**
@@ -62,7 +61,6 @@ export const authConfig = {
     usersTable: users,
     accountsTable: accounts,
     sessionsTable: sessions,
-    verificationTokensTable: verificationTokens,
   }),
   callbacks: {
     session: ({ session, user }) => ({
