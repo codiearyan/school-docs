@@ -6,6 +6,8 @@ export const config = { matcher: ["/dashboard(.*)"] }
 const protectedRoutes = ["/profile"]
 
 export default async function middleware(request: NextRequest){
+
+    console.log("Middleware Request" ,request.nextUrl)
     // const session = await auth();
     const {pathname} = request.nextUrl;
 
