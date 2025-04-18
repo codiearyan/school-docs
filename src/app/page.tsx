@@ -1,5 +1,6 @@
 import GoogleSignInButton from "@/components/auth/signin-button";
 import GoogleSignOutButton from "@/components/auth/signout-button";
+import FolderView from "@/components/folder-view";
 import { auth } from "@/server/auth";
 
 import Image from "next/image";
@@ -11,7 +12,7 @@ export default  async function HomePage() {
 
   if(session?.user){
     return (
-      <div className="bg-black h-screen text-white">
+      <div className="bg- h-screen tehite">
         
         <h1>
           
@@ -33,6 +34,7 @@ export default  async function HomePage() {
           )
          }
          <GoogleSignOutButton />
+         <FolderView />
         </div>
     )
 
